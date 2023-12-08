@@ -1,5 +1,12 @@
+import { Header } from "../../components/Header";
+import { Presentation } from "./components/Presentation";
+import { Container } from "./styles";
+
 export function Home(){
     return(
-        <h1>Home</h1>
+        <Container>
+            <Header />
+            <Presentation/>
+        </Container>
     )
 }
