@@ -18,8 +18,8 @@ export function Header(){
             <IoMenu size={26} onClick={() => setOpenMenu(true)}/>
             <Nav isOpen={openMenu}>
                 <IoClose size={24} onClick={() => setOpenMenu(false)}/>
-                <li onClick={() => navigate('#')}>Login</li>
-                <li  onClick={() => navigate('#')}>Cadastro</li>
+                <li onClick={() => navigate('/escolha-de-funcao/login')}>Login</li>
+                <li  onClick={() => navigate('/escolha-de-funcao/cadastro')}>Cadastro</li>
             </Nav>
         </Container>
     )

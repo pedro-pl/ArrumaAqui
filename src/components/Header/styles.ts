@@ -56,6 +56,7 @@ export const Nav = styled.nav<isOpenProps>`
     border-radius: 5px;
     box-shadow: 0 3px 6px #00000029, 0 1px 2px #0000003b;
     transition: all.2s;
+    z-index: 999;
 
     li{
         list-style: none;
