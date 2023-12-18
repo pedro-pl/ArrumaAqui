@@ -8,14 +8,14 @@ export const Container = styled.div`
     align-items: center;
     transition: all.3s;
 
-    @media (min-width: 1000px){
+    @media (min-width: 901px){
         transition: all.3s;
         height: 40vh;
     }
 
     @media (min-width: 1400px){
         transition: all.3s;
-        height: 70vh;
+        height: 60vh;
     }
 `
 
@@ -25,6 +25,7 @@ export const Text = styled.p`
     color: ${(props) => props.theme['gray-800']};
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: all.3s;
+    text-align: center;
 
     span{
         color: ${(props) => props.theme['blue-200']};
@@ -33,10 +34,15 @@ export const Text = styled.p`
     @media (min-width: 450px){
         transition: all.3s;
         width: 30rem;
+        text-align: start;
+    }
+
+    @media (min-width: 705px){
+        transition: all.3s;
+        width: 25rem;
     }
     
     @media (min-width: 750px){
-        transition: all.3s;
         transition: all.3s;
         font-size: 2rem;
     }
@@ -62,6 +68,7 @@ export const PersonsImg = styled.img`
     transition: all.3s;
 
     @media (min-width: 700px){
+        transition: all.3s;
         display: block;
     }
 

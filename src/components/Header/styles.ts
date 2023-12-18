@@ -44,9 +44,9 @@ export const Nav = styled.nav<isOpenProps>`
     height: 10vh;
     background-color: ${(props) => props.theme['white']};
     position: fixed;
-    right: 0rem;
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;;
+    align-items: flex-end;
     justify-content: flex-end;
     top: 10px;
     row-gap: 1rem;
@@ -55,7 +55,7 @@ export const Nav = styled.nav<isOpenProps>`
     transition: all.3s;
     border-radius: 5px;
     box-shadow: 0 3px 6px #00000029, 0 1px 2px #0000003b;
-    transition: all.3s;
+    transition: all.2s;
 
     li{
         list-style: none;
@@ -67,7 +67,16 @@ export const Nav = styled.nav<isOpenProps>`
         font-weight: 600;
     }
 
-    @media (min-width: 900px) {
+    svg{
+            align-self: flex-start;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+            display: block;
+        }
+
+    @media (min-width: 901px) {
         width: 18rem;
         height: 100%;
         display: flex;
@@ -78,15 +87,7 @@ export const Nav = styled.nav<isOpenProps>`
         box-shadow: none;
         background-color: transparent;
         right: 0;
-
-        svg{
-            align-self: flex-start;
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            cursor: pointer;
-            display: block;
-        }
+        transition: all.2s;
 
         li{
             border: 2px solid ${(props) => props.theme['blue-200']};
